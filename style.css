@@ -1,0 +1,12 @@
+.wrapper{width:100%;}
+ul{list-style-type:none}
+li{float:left;padding: 0 10px;padding-top:32px }
+.carousel-indicators{margin: 0 auto;display:none}
+.carousel-indicators li{border:1px solid pink !important;padding:0px;margin:1px;}
+.carousel-indicators li.active{background-color: pink !important;padding:0px;margin:1px; }
+.glyphicon-chevron-left:before{content:"";}
+.glyphicon-chevron-right:before{content:"";}
+h1{text-align:center}
+.pointsUL{display:inline-block;width:50%;list-style-type:disc;color:black}
+.points{color:black}
+.ai, .ml{background:url('../assets/body.jpg') no-repeat;background-size:  cover;height: 500px}
