@@ -1,83 +1,212 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Sticky Header and Footer</title>
-<style type="text/css">
-/* Reset body padding and margins */
-
-/* Make Header Sticky */
-#header_container { background:#eee; border:1px solid #666; height:60px; left:0; position:fixed; width:100%; top:0; }
-/* #header{ line-height:60px; margin:0 auto; width:940px; text-align:center; } */
-
-/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
-
-#content{}
-
-/* Make Footer Sticky */
-#footer_container { background:#eee; border:1px solid #666; bottom:0; height:60px; left:0; position:fixed; width:100%; }
-#footer { line-height:60px; margin:0 auto; width:940px; text-align:center; }
-li{float:left;padding: 10px;list-style-type: none}
-</style>
+  <title>Lorem Ipsum</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
 </head>
+
 <body>
-<!-- BEGIN: Sticky Header -->
-<div class="container">
-<div id="header_container">
-	<div id="header">
+  <!-- BEGIN: Sticky Header -->
+
+
+  <div id="header">
+    <div class="container" style="height:76px">
       <div class="row">
-          <div class="col-md-4" style="display:inline-block">
-            <h1>Logo</h1>
-          </div>
-          <div class="col-md-8" style="float:right">
-            <ul>
-              <li>HOME</li>
-              <li>ABOUT</li>
-              <li>SERVICES</li>
-              <li>CONTACT</li>
-            </ul>
+        <div class="col-md-4" style="display:inline-block">
+          <h1>Logo</h1>
+        </div>
+        <div class="col-md-8">
+          <ul class="nav">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END: Sticky Header -->
+
+  <!-- BEGIN: Page Content -->
+  <div id="content">
+    <div class="container">
+      <div id="body">
+        <!-- first body-->
+
+        <div class="carousal">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="ai">
+                      <h1>Artificial Intelligence</h1>
+                      <br>
+                      <p style="display:inline-block;width:50%"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                      <img src="assets/ai.jpg" alt="ai" style="width:50%;display:inline-block;float:right;">
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="ml">
+                      <h1>Machine Learning</h1>
+                      <br>
+                      <p style="display:inline-block;width:50%"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                      <img src="assets/machineLearning.jpg" alt="ai" style="width:50%;display:inline-block;float:right;height:380px">
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="ai">
+                      <h1>Web Development</h1>
+                      <br>
+                      <!-- <p style="display:inline-block;width:50%"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p> -->
+                      <ul class="pointsUL">
+                        <li class="point">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
+                        <li class="point">when an unknown printer took a galley of type and scrambled it to make a type specimen book</li>
+                        <li class="point">when an unknown printer took a galley of type and scrambled it to make a type specimen book</li>
+                      </ul>
+                      <img src="assets/webApp.jpg" alt="ai" style="width:50%;display:inline-block;float:right">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="width:0px">
+                  <span class="glyphicon glyphicon-chevron-left" style="background: url('assets/left.png') no-repeat !important ;width:45px"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next" style="width:0px">
+                  <span class="glyphicon glyphicon-chevron-right" style="background: url('assets/right.png') no-repeat !important ;width:45px"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-       
-	</div>
-</div>
-</div>
-<!-- END: Sticky Header -->
+      </div>
+    </div>
+    <!-- first body ends -- >
 
-<!-- BEGIN: Page Content -->
-<div class = "container">
-<div id="body">
-	<div id="content">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet ipsum magna, et convallis sem. Nunc pulvinar magna vitae orci malesuada blandit. Proin ac purus dui. Suspendisse venenatis egestas egestas. Sed tincidunt diam et massa convallis et mollis enim malesuada. Nullam eget metus nunc, eget imperdiet urna. Quisque vehicula ipsum non sapien vulputate convallis quis quis ligula. Aenean gravida mollis blandit. Nullam lacus tortor, viverra a auctor ac, porta eget neque. Duis placerat mi metus, a gravida quam.
-		<br /><br />
-		Nam ut augue mauris, at dapibus quam. Pellentesque eu nunc enim. Proin facilisis, dolor nec sollicitudin mattis, sem velit mollis sem, sagittis sagittis libero ante id nunc. Nam congue, mauris non porttitor convallis, purus elit faucibus nunc, in mollis sem lorem eu tortor. Cras nec justo id libero fringilla placerat ac et leo. Mauris ac vehicula odio. Cras augue erat, sodales vel porttitor ut, scelerisque nec justo. Praesent vitae lorem erat. Suspendisse elementum tortor vitae diam venenatis eget fermentum lacus suscipit. Quisque varius vulputate tempus.
-		...
-      Header Content
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet ipsum magna, et convallis sem. Nunc pulvinar magna vitae orci malesuada blandit. Proin ac purus dui. Suspendisse venenatis egestas egestas. Sed tincidunt diam et massa convallis et mollis enim malesuada. Nullam eget metus nunc, eget imperdiet urna. Quisque vehicula ipsum non sapien vulputate convallis quis quis ligula. Aenean gravida mollis blandit. Nullam lacus tortor, viverra a auctor ac, porta eget neque. Duis placerat mi metus, a gravida quam. 
+        <!-- second body -->
+    <div class="about">
+      <div class="container">
+        <h1>About US</h1>
+      </div>
+    </div>
+    <!-- second body ends -->
+    <!-- contact us-->
+    <div class="contactUs">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="links">
+            <div class="col-md-6 col-md-offset-4">
+              <div class="container">
+                <div class="col-md-4 " style="padding-left:34px">
+                  <h1>Logo</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu ante et lorem rhoncus blandit. Aliquam erat
+                    volutpat. Mauris venenatis mauris mauris, quis molestie lacus ultricies sed. Nulla augue nisi, eleifend
+                    id orci et, sollicitudin pulvinar nisl. Suspendisse lobortis ligula eros, sit amet pretium augue pellentesque
+                    ac. Proin libero urna, faucibus id eros quis, consequat condimentum velit. Nulla facilisi. Etiam in turpis
+                    velit. Phasellus rhoncus elit egestas sem molestie ultrices.
 
-Nam ut augue mauris, at dapibus quam. Pellentesque eu nunc enim. Proin facilisis, dolor nec sollicitudin mattis, sem velit mollis sem, sagittis sagittis libero ante id nunc. Nam congue, mauris non porttitor convallis, purus elit faucibus nunc, in mollis sem lorem eu tortor. Cras nec justo id libero fringilla placerat ac et leo. Mauris ac vehicula odio. Cras augue erat, sodales vel porttitor ut, scelerisque nec justo. Praesent vitae lorem erat. Suspendisse elementum tortor vitae diam venenatis eget fermentum lacus suscipit. Quisque varius vulputate tempus. ...
-      Header Content
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet ipsum magna, et convallis sem. Nunc pulvinar magna vitae orci malesuada blandit. Proin ac purus dui. Suspendisse venenatis egestas egestas. Sed tincidunt diam et massa convallis et mollis enim malesuada. Nullam eget metus nunc, eget imperdiet urna. Quisque vehicula ipsum non sapien vulputate convallis quis quis ligula. Aenean gravida mollis blandit. Nullam lacus tortor, viverra a auctor ac, porta eget neque. Duis placerat mi metus, a gravida quam. 
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <h3>Links</h3>
+                  <ul>
+                    <li>
+                      <img src="assets/rightArr.png"></img>HOME</li>
 
-Nam ut augue mauris, at dapibus quam. Pellentesque eu nunc enim. Proin facilisis, dolor nec sollicitudin mattis, sem velit mollis sem, sagittis sagittis libero ante id nunc. Nam congue, mauris non porttitor convallis, purus elit faucibus nunc, in mollis sem lorem eu tortor. Cras nec justo id libero fringilla placerat ac et leo. Mauris ac vehicula odio. Cras augue erat, sodales vel porttitor ut, scelerisque nec justo. Praesent vitae lorem erat. Suspendisse elementum tortor vitae diam venenatis eget fermentum lacus suscipit. Quisque varius vulputate tempus. ...
+                    <li>
+                      <img src="assets/rightArr.png"></img>ABOUT</li>
 
-Nam ut augue mauris, at dapibus quam. Pellentesque eu nunc enim. Proin facilisis, dolor nec sollicitudin mattis, sem velit mollis sem, sagittis sagittis libero ante id nunc. Nam congue, mauris non porttitor convallis, purus elit faucibus nunc, in mollis sem lorem eu tortor. Cras nec justo id libero fringilla placerat ac et leo. Mauris ac vehicula odio. Cras augue erat, sodales vel porttitor ut, scelerisque nec justo. Praesent vitae lorem erat. Suspendisse elementum tortor vitae diam venenatis eget fermentum lacus suscipit. Quisque varius vulputate tempus. ...
-      Header Content
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet ipsum magna, et convallis sem. Nunc pulvinar magna vitae orci malesuada blandit. Proin ac purus dui. Suspendisse venenatis egestas egestas. Sed tincidunt diam et massa convallis et mollis enim malesuada. Nullam eget metus nunc, eget imperdiet urna. Quisque vehicula ipsum non sapien vulputate convallis quis quis ligula. Aenean gravida mollis blandit. Nullam lacus tortor, viverra a auctor ac, porta eget neque. Duis placerat mi metus, a gravida quam. 
+                    <li>
+                      <img src="assets/rightArr.png"></img>SERVICES</li>
 
-Nam ut augue mauris, at dapibus quam. Pellentesque eu nunc enim. Proin facilisis, dolor nec sollicitudin mattis, sem velit mollis sem, sagittis sagittis libero ante id nunc. Nam congue, mauris non porttitor convallis, purus elit faucibus nunc, in mollis sem lorem eu tortor. Cras nec justo id libero fringilla placerat ac et leo. Mauris ac vehicula odio. Cras augue erat, sodales vel porttitor ut, scelerisque nec justo. Praesent vitae lorem erat. Suspendisse elementum tortor vitae diam venenatis eget fermentum lacus suscipit. Quisque varius vulputate tempus. ...
-	</div>
-</div>
-</div>
-<!-- END: Page Content -->
+                    <li>
+                      <img src="assets/rightArr.png"></img> CONTACT</li>
 
-<!-- BEGIN: Sticky Footer -->
-<div id="footer_container">
-	<div id="footer">
-      <footer>
-          <a>Contact</a>
-        </footer>
-	</div>
-</div>
-<!-- END: Sticky Footer -->
+                  </ul>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="contact">
+            <div class="col-md-12">
+              <!-- <div class="container"> -->
+              <h3>Contact Us</h3>
+              <!-- <div class="row"> -->
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Name*" required />
+                  <br>
+                  <input type="email" class="form-control" placeholder="Your Email*" required />
+                  <br>
+                  <input type="number" class="form-control" placeholder="Your Phone*" required />
+                  <br>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <textarea rows="4" cols="50" class="form-control" placeholder="Your Message"></textarea>
+                </div>
+              </div>
+              <br>
+              <!-- </div> -->
+              <div class="row">
+                <div class="col-md-12">
+                  <div style="width: 36%;margin: 0 auto;">
+                    <button type="button" class="btn btn-primary btn-lg"> Submit</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- </div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact us ends -->
+    </div>
+  </div>
+  <!-- END: Page Content -->
+
+  <!-- BEGIN: Sticky Footer -->
+  <div id="footer">
+    <p style="margin-top:28px">
+      <a href="#" class="copy">Copyright © 2017. All rights reserved.</a>
+    </p>
+  </div>
+
+  <!-- END: Sticky Footer -->
 </body>
+
 </html>
