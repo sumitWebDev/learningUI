@@ -1,28 +1,76 @@
-.wrapper{width:100%;}
-ul{list-style-type:none}
-li{float:left;padding: 0 10px;padding-top:32px;display: inline-block }
+.wrapper{width:80%;}
+ul{list-style-type:none;}
+.nav{float: right;margin-top:21px }
+/* li{float:left;padding: 0 10px;padding-top:32px;color: black } */
+#header,#footer,#content { position:absolute; right:0;left:0; background:
+#032d41}
+
+#header{
+height:76px; top:0;
+color: white
+}
+
+#content{
+top:76px;
+bottom:76px;
+background:white;
+overflow-y:scroll
+}
+
+li {
+float: left;
+padding: 10px;
+list-style-type: none;
+}
+/* .container{padding: 0 15px;margin-right: 15px} */
 .carousel-indicators{margin: 0 auto;display:none}
-.carousel-indicators li{border:1px solid pink !important;padding:0px;margin:1px;}
-.carousel-indicators li.active{background-color: pink !important;padding:0px;margin:1px; }
+.carousel-indicators li{border:1px solid pink !important;padding:0px;margin:
+1px;}
+.carousel-indicators li.active{background-color: pink !important;padding:0px
+;margin:1px; }
 .glyphicon-chevron-left:before{content:"";}
 .glyphicon-chevron-right:before{content:"";}
 h1{text-align:center}
-.pointsUL{display:inline-block;width:50%;list-style-type:disc;color:black}
+.pointsUL{display:inline-block;width:50%;list-style-type:disc;color:black;}
 .points{color:black}
-.ai, .ml{background:url('../assets/body.jpg') no-repeat;background-size:  cover;height: 500px}
-/* Reset body padding and margins */
-body { margin:0; padding:0; }
+.ai, .ml{background:url('../assets/body.jpg') no-repeat;background-size: 
+cover;height: 500px}
+footer{background-color: black;padding: 20px;text-align:center}
+footer a {color: white;}
+footer span{padding: 10px}
 
-/* Make Header Sticky */
-#header_container { background:rgb(14, 13, 13); border:1px solid #666; height:60px; left:0; position:fixed; width:100%; top:0; }
-/* #header{ line-height:60px; margin:0 auto; width:940px; text-align:center; } */
+.links{background-color: #003d59;display: inline-block;width: 50%;
+margin-bottom: -5px; padding: 36px;}
+.links h1{color: white}
+.links p{color: #ccc}
+.links ul{color: #ccc;}
+.links li{float:none}
+.links li img{ padding: 0 10px 0 0;}
+.links h3{color: white; margin-left: 48px; margin-top: 23px; border-bottom: 
+3px solid #00b7f1;width: 38px;padding-bottom: 12px;}
+.contact{ background-color: #00b7f1;
+display: inline-block;
+margin-left: -3px;
+margin-bottom: -5px;
+}
+.contact h3{color: white}
+.contactUs{}
+.btn-primary {
+color: #fff;
+background-color: #032d41;
+border-color: #032d41;
+margin-bottom: 62.8%;
+margin-top: 8%;
+}
+/*contact us*/
 
-/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
-#body { margin:0 auto; overflow:auto; padding:80px 0; width:940px; }
-#content{}
+/*footer css*/
+#footer{
+height:76px; bottom:0;
+text-align: center
+}
+.copy{color:white;text-align: center;}
+#footer a:hover{color:white;text-decoration: none}
+/*footer css ends*/
 
-/* Make Footer Sticky */
-#footer_container { background-color:rgb(15, 15, 15); border:1px solid #666; bottom:0; height:60px; left:0; position:fixed; width:100%; }
-#footer { line-height:60px; margin:0 auto; width:940px; text-align:center; }
-footer{background-color: black;}
-li{float: left}
+
